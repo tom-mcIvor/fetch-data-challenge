@@ -1,7 +1,14 @@
 
-const List = () => {
+import ListItem from "./ListItem"
+
+const List = ( { items } ) => {
   return (
-    <div>List</div>
+    <ul>
+      {items.map(item => (
+        <ListItem key={item.id} item={item} />
+      ))}
+
+    </ul>
   )
 }
 

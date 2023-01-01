@@ -1,10 +1,13 @@
 
-const Button = () => {
+const Button = ({ buttonText, reqType, setReqType }) => {
   return (
-    <div>
-
-      
-    </div>
+    <button
+      className={buttonText === reqType ? 'selected' : null}
+      type='button'
+      onClick={() => setReqType(buttonText)}
+    >
+      {buttonText}
+    </button>
   )
 }
 

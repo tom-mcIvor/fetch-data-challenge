@@ -13,6 +13,7 @@ function App() {
       try {
         const response = await fetch(`${API_URL}${reqType}`)
         const data = await response.json()
+        console.log(data);
         setitems(data)
       }
       catch (err) {
@@ -27,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <Form reqType={reqType} setReqType={setReqType} />
-
+      <List items={items}/>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 
 const Comments = () => {
   return (
-    <div>Comments</div>
+    <div className="comments">Comments</div>
   )
 }
 

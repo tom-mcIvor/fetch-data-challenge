@@ -1,7 +1,7 @@
 
 const Posts = () => {
   return (
-    <div>Posts</div>
+    <div className="posts">Posts</div>
   )
 }
 
